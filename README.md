@@ -8,11 +8,7 @@ https://www.zcool.com.cn/work/ZMzU0MjQyODA=.html
 ###### 项目截图：
 
 ![ad](https://raw.githubusercontent.com/teddyol/quanyou/master/explainImg/p1.png)
-
 ![ad](https://raw.githubusercontent.com/teddyol/quanyou/master/explainImg/p2.png)
-
 ![ad](https://raw.githubusercontent.com/teddyol/quanyou/master/explainImg/p3.png)
-
 ![ad](https://raw.githubusercontent.com/teddyol/quanyou/master/explainImg/p4.png)
-
 ![ad](https://raw.githubusercontent.com/teddyol/quanyou/master/explainImg/p5.png)
