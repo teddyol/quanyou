@@ -1,0 +1,55 @@
+.top-img{
+  padding:24rpx 40rpx;
+}
+.top-img image{
+  width:112rpx;
+  height:112rpx;
+  border-radius:50%;
+}
+.top-img .top-text{
+  line-height:56rpx;
+  padding:10rpx 0 0 132rpx;
+}
+.top-img button{
+  position:absolute;
+  top:56rpx;
+  right:40rpx;
+  padding:0;
+  width:100rpx;
+  height:60rpx;
+  border:none;
+  border-radius:50rpx;
+  z-index:1;
+}
+.remind-title .weui-cell__hd{
+  width:10rpx;
+  height:10rpx;
+  border-radius:50%;
+  margin-right:10rpx;
+}
+.remind-item{
+  margin:0 30rpx 20rpx 30rpx;
+  border-radius:10rpx;
+}
+.remind-item::before{
+  border:none;
+}
+.remind-item .weui-cell__hd{
+  margin-right:30rpx;
+}
+.remind-item .weui-cell__ft{
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  border:4rpx solid #eee;
+  text-align:center;
+}
+.remind-item .go{
+  line-height:60rpx;
+}
+.remind-item .time{
+  width:auto;
+  height:auto;
+  border-radius:initial;
+  border:none;
+}

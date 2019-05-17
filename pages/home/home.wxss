@@ -1,0 +1,106 @@
+page{
+  background:#fff;
+}
+.set{
+  padding:30rpx 0 10rpx 30rpx;
+}
+.set text{
+  padding:0 30rpx;
+}
+.personal{
+  padding:0 30rpx;
+}
+.personal image{
+  width:112rpx;
+  height:112rpx;
+  border-radius:50%;
+}
+.personal .personal-text{
+  line-height:56rpx;
+  padding:10rpx 0 0 132rpx;
+}
+.dynamic::before{
+  border:none;
+}
+.dynamic .weui-cell__ft{
+  padding:0 30rpx 0 160rpx;
+}
+.dynamic .weui-cell__ft text{
+  padding:12rpx;
+  border-radius:50%;
+}
+.dynamic .weui-cell__ft .weui-badge{
+  position:absolute;
+  top:-10rpx;
+  right:-10rpx;
+  z-index:1;
+}
+.pet{
+  position:relative;
+  padding:0 30rpx 30rpx;
+}
+.pet::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:30rpx;
+  right:30rpx;
+  height:1px;
+  display:block;
+  background:#ccc;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  z-index:1;
+}
+.pet::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:30rpx;
+  right:30rpx;
+  height:1px;
+  display:block;
+  background:#ccc;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  z-index:1;
+}
+.pet .pet-title{
+  padding:30rpx 30rpx 20rpx;
+}
+.pet .icon{
+  width:80rpx;
+  height:80rpx;
+  border-radius:50%;
+}
+.pet .iconfont{
+  display:inline-block;
+  font-size:80rpx;
+  line-height:normal;
+}
+.pet .pet-text{
+  line-height:36rpx;
+  padding:10rpx 0 0 100rpx;
+}
+.pet .iconfont + .pet-text{
+  line-height:72rpx;
+}
+.pet .weui-flex__item{
+  padding-left:30rpx;
+}
+.home-list::before,
+.home-list::after,
+.home-list>view::before{
+  border:none;
+}
+.home-list{
+  margin:0;
+}
+.home-list .iconfont{
+  display:block;
+  margin-top:-4rpx;
+  padding-right:20rpx;
+}
+.home-list>view{
+  padding:8rpx 30rpx;
+}

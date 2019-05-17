@@ -1,0 +1,142 @@
+<view class="page">
+  <view class="weui-flex center bg-fff community-nav">
+      <view class="" data-key="1" bindtap="tapNav">
+        <view class="item {{currentNav == 1 ? 'current' : ''}}">推荐</view>
+      </view>
+      <view class="" data-key="2" bindtap="tapNav">
+        <view class="item {{currentNav == 2 ? 'current' : ''}}">关注</view>
+      </view>
+      <view class="" data-key="3" bindtap="tapNav">
+        <view class="item {{currentNav == 3 ? 'current' : ''}}">视频</view>
+      </view>
+  </view>
+  <!-- 选项一 -->
+  <view class="tab-content bg-fff" hidden="{{currentNav != 1}}">
+    <block wx:for="{{recommendList}}" wx:for-item="item" wx:key>
+      <view class="weui-cell recommend-user">
+          <view class="weui-cell__hd">
+            <image src="{{item.userLogo}}" mode="aspectFill"></image>
+          </view>
+          <view class="weui-cell__bd">
+            <view class="f-13">{{item.userName}}</view>
+            <view class="f-12 c-99">{{item.last}}前</view>
+          </view>
+          <view class="weui-cell__ft {{item.follow ? 'already' : ''}}">
+            <text class="f-12">{{item.follow ? '已关注' : '+关注'}}</text>
+          </view>
+      </view>
+      <view class="f-12 m-ellipsis-2 recommend-content">{{item.content}}</view>
+      <view 
+          class="recommend-img {{item.img.length == 1 ? 'one' : '' || item.img.length == 2 ? 'two' : '' || item.img.length == 3 ?     'three' : '' || item.img.length > 3 ? 'more' : ''}}"
+          style="max-height : {{item.img.length == 1 || item.img.length == 2 ? sysWidth : 'auto'}} ;height : {{item.img.length >2 ?sysWidth : ''}}"
+      >
+        <block wx:for="{{item.img}}" wx:for-item="img" wx:key>
+          <image src="{{img}}" mode="aspectFill"></image>
+        </block>
+      </view>
+      <view class="recommend-label">
+        <view class="f-12 c-99" wx:for="{{item.label}}" wx:for-item="labelText" wx:key>
+          #{{labelText}}
+        </view>
+      </view>
+      <view class="recommend-fun">
+          <view>
+            <text class="iconfont iconxin f-20 c-99 weight lf"></text>
+            <view class="f-12 c-99">21</view>
+          </view>
+          <view>
+            <text class="iconfont iconpinglun f-20 c-99 weight lf"></text>
+            <view class="f-12 c-99">21</view>
+          </view>
+          <view class="transpond rt">
+            <text class="iconfont iconzhuanfa f-20 c-99 weight"></text>
+          </view>
+      </view>
+    </block>
+  </view>
+  <!-- 选项二 -->
+  <view class="tab-content bg-fff" hidden="{{currentNav != 2}}">
+    <block wx:for="{{followList}}" wx:for-item="item" wx:key>
+      <view class="weui-cell recommend-user">
+          <view class="weui-cell__hd">
+            <image src="{{item.userLogo}}" mode="aspectFill"></image>
+          </view>
+          <view class="weui-cell__bd">
+            <view class="f-13">{{item.userName}}</view>
+            <view class="f-12 c-99">{{item.last}}前</view>
+          </view>
+          <view class="weui-cell__ft {{item.follow ? 'already' : ''}}">
+            <text class="f-12">{{item.follow ? '已关注' : '+关注'}}</text>
+          </view>
+      </view>
+      <view class="f-12 m-ellipsis-2 recommend-content">{{item.content}}</view>
+      <view 
+          class="recommend-img {{item.img.length == 1 ? 'one' : '' || item.img.length == 2 ? 'two' : '' || item.img.length == 3 ?     'three' : '' || item.img.length > 3 ? 'more' : ''}}"
+          style="max-height : {{item.img.length == 1 || item.img.length == 2 ? sysWidth : 'auto'}} ;height : {{item.img.length >2 ?sysWidth : ''}}"
+      >
+        <block wx:for="{{item.img}}" wx:for-item="img" wx:key>
+          <image src="{{img}}" mode="aspectFill"></image>
+        </block>
+      </view>
+      <view class="recommend-label">
+        <view class="f-12 c-99" wx:for="{{item.label}}" wx:for-item="labelText" wx:key>
+          #{{labelText}}
+        </view>
+      </view>
+      <view class="recommend-fun">
+          <view>
+            <text class="iconfont iconxin f-20 c-99 weight lf"></text>
+            <view class="f-12 c-99">21</view>
+          </view>
+          <view>
+            <text class="iconfont iconpinglun f-20 c-99 weight lf"></text>
+            <view class="f-12 c-99">21</view>
+          </view>
+          <view class="transpond rt">
+            <text class="iconfont iconzhuanfa f-20 c-99 weight"></text>
+          </view>
+      </view>
+    </block>
+  </view>
+  <!-- 选项三 -->
+  <view class="tab-content clean video-box" hidden="{{currentNav != 3}}">
+    <block wx:for="{{videoList}}" wx:for-item="item" wx:key>
+      <view class="lf video-item">
+        <view class="relative">
+          <image
+            src="{{item.img}}"
+            mode="aspectFill"
+            data-target="{{item.id}}"
+            catchtap="videoPlay"
+          >
+          </image>
+          <view>
+            <text class="f-12 c-white m-ellipsis">{{item.title}}</text>
+            <view class="weui-cell recommend-user">
+                <view class="weui-cell__hd">
+                  <image src="{{item.userLogo}}" mode="aspectFill"></image>
+                </view>
+                <view class="weui-cell__bd">
+                  <view class="f-12 c-white m-ellipsis">{{item.userName}}</view>
+                </view>
+            </view>
+          </view>
+          <video
+            class="video none"
+            id="{{'video' + item.id}}"
+            src="{{videoUrl}}" 
+            title="{{item.title}}"
+            autoplay="{{false}}"
+            direction = "0"
+            enable-play-gesture
+            bindended="closeVideo"
+            binderror="videoErrorCallback"
+            bindfullscreenchange="videoFull"
+          >
+          </video>
+        </view>
+      </view>
+    </block>
+    
+  </view>
+</view>

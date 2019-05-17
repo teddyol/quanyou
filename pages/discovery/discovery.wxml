@@ -1,0 +1,129 @@
+<view class="page">
+  <!-- 搜索栏 -->
+  <view class="search-box">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" 
+            class="weui-search-bar__input"
+            placeholder="搜索"
+            value="{{inputVal}}"
+            focus="{{inputShowed}}"
+            bindinput="inputTyping"
+          />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn c-base" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result f-14" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view>
+    <swiper
+      indicator-dots
+      indicator-color="#fff"
+      indicator-active-color="#ff8000"
+      circular
+      autoplay
+      interval="3000"
+      bindchange="changeSwiper"
+      class="swiper"
+    >
+      <block wx:for="{{imgUrls}}" wx:key>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 快捷入口 -->
+  <view class="weui-flex center shortcut">
+    <view class="weui-flex__item">
+      <text class="iconfont iconshu c-white f-26 bg-blue"></text>
+      <view class="f-12 c-66">养宠知识</view>
+    </view>
+    <view class="weui-flex__item">
+      <text class="iconfont icongongwenbao c-white f-26 bg-yellow"></text>
+      <view class="f-12 c-66">户外活动</view>
+    </view>
+    <view class="weui-flex__item">
+      <text class="iconfont icondingwei c-white f-26 bg-green"></text>
+      <view class="f-12 c-66">同城服务</view>
+    </view>
+    <view class="weui-flex__item">
+      <text class="iconfont iconshanghu c-white f-26 bg-base"></text>
+      <view class="f-12 c-66">线上商城</view>
+    </view>
+  </view>
+  <!-- 热门文章 -->
+  <view class="hot-article bg-fff relative">
+    <view class="bg-base c-white f-10 label">文章</view>
+    <image src="../../assets/images/recommend/6-gou-3.jpg"  mode="aspectFill"></image>
+    <view class="weight m-ellipsis">本周热门！DOUDIN的生活日记</view>
+    <view class="f-12 c-99">五一就到这玩！</view>
+  </view>
+  <!-- 养宠小知识 -->
+  <view class="knowledge">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd weight c-33">养宠小知识</view>
+      <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../assets/images/recommend/6-gou-3.jpg" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title f-14">标题一</view>
+            <view class="weui-media-box__desc">狗狗虽然也是可以吃人吃的食物的，但是大部分都是不能吃的，比如：猪肝，狗狗长期吃会引起中毒。</view>
+          </view>
+        </navigator>
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="../../assets/images/recommend/6-gou-3.jpg" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title f-14">标题二</view>
+            <view class="weui-media-box__desc">狗狗虽然也是可以吃人吃的食物的，但是大部分都是不能吃的，比如：猪肝，狗狗长期吃会引起中毒。</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+</view>

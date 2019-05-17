@@ -1,0 +1,97 @@
+<!-- <text class="iconfont iconshezhi"></text> -->
+<view class="page">
+  <view class="top-img bg-fff">
+    <image class="lf" src="../../assets/images/1.jpg" mode="aspectFill"></image>
+    <view class="top-text">
+      <view class="f-16">滚滚</view>
+      <view class="f-12 c-99">366天陪伴</view>
+    </view>
+    <button class="bg-base c-white f-12">数据</button>
+  </view>
+
+  <!-- 今日 -->
+  <view class="remind-list">
+    <view class="weui-cell remind-title">
+      <view class="weui-cell__hd bg-base"></view>
+      <view class="weui-cell__bd weight">今天</view>
+    </view>
+    <view class="weui-cell remind-item bg-fff">
+        <view class="weui-cell__hd">
+          <text class="iconfont icongutou c-green f-20"></text>
+        </view>
+        <view class="weui-cell__bd">
+          <view>喂食</view>
+          <view class="f-12 c-99">今日已喂食2次</view>
+        </view>
+        <view class="weui-cell__ft">
+          <text class="iconfont iconzhengque f-20 c-ee weight"></text>
+        </view>
+    </view>
+    <view class="weui-cell remind-item bg-fff">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconiconset0457 c-blue f-20"></text>
+        </view>
+        <view class="weui-cell__bd">
+          <view>饮水</view>
+          <view class="f-12 c-99">今日饮水目标已完成!</view>
+        </view>
+        <view class="weui-cell__ft">
+          <text class="iconfont iconzhengque f-20 c-ee weight"></text>
+        </view>
+    </view>
+    <view class="weui-cell remind-item bg-fff">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconchongwu1 c-orange f-20"></text>
+        </view>
+        <view class="weui-cell__bd">
+          <view>遛狗</view>
+          <view class="f-12 c-99">今日还没有遛狗喔!</view>
+        </view>
+        <view class="weui-cell__ft go">
+          <text class="f-13 c-ee">GO</text>
+        </view>
+    </view>
+  </view>
+
+  <!-- 健康提醒 -->
+  <view class="remind-list">
+    <view class="weui-cell remind-title">
+      <view class="weui-cell__hd bg-blue"></view>
+      <view class="weui-cell__bd weight">健康提醒</view>
+    </view>
+    <view class="weui-cell remind-item bg-fff">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconxizaomuyu c-base f-20"></text>
+        </view>
+        <view class="weui-cell__bd">
+          <view>洗澡</view>
+        </view>
+        <view class="weui-cell__ft">
+          <text class="iconfont iconzhengque f-20 c-ee weight"></text>
+        </view>
+    </view>
+    <view class="weui-cell remind-item bg-fff">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconzhenguan c-base f-20"></text>
+        </view>
+        <view class="weui-cell__bd">
+          <view>免疫</view>
+        </view>
+        <view class="weui-cell__ft time">
+          <text class="f-13 c-99">10天后</text>
+        </view>
+    </view>
+    <view class="weui-cell remind-item bg-fff">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconchongzi c-base f-20"></text>
+        </view>
+        <view class="weui-cell__bd">
+          <view>驱虫</view>
+        </view>
+        <view class="weui-cell__ft time">
+          <text class="f-13 c-99">12天后</text>
+        </view>
+    </view>
+  </view>
+  <view class="blank"></view>
+</view>

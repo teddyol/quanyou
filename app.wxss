@@ -1,0 +1,189 @@
+@import "weui.wxss";
+@import "/assets/fonts/iconfont.wxss";
+
+page {
+  color:#333;
+  font-size:28rpx;
+  background: #f7f7fb;
+}
+/* 去除button边框 */
+button::after{
+  border: none;
+} 
+/* 颜色 */
+.c-base{
+  color:#ff8000 !important;
+}
+.c-white{
+  color:#fff !important;
+}
+.c-black{
+  color:#000 !important;
+}
+.c-66{
+  color:#666 !important;
+}
+.c-33{
+  color:#333 !important;
+}
+.c-99{
+  color:#999 !important;
+}
+.c-cc{
+  color:#ccc !important;
+}
+.c-ee{
+  color:#eee !important;
+}
+.c-red{
+  color:#ff1649 !important;
+}
+.c-green{
+  color:#46b648 !important;
+}
+.c-yellow{
+  color:#fed30b !important;
+}
+.c-orange{
+  color:#ff4e2c !important;
+}
+.c-blue{
+  color:#1e8bff !important;
+}
+.c-tran{
+  color:transparent !important;
+}
+.bg-fff{
+  background-color:#fff !important;
+}
+.bg-base{
+  background-color:#ff8000 !important;
+}
+.bg-blue{
+  background-color:#1e8bff !important;
+}
+.bg-red{
+  background-color:#ff1649 !important;
+}
+.bg-yellow{
+  background-color:#fed30b !important;
+}
+.bg-green{
+  background-color:#46b648 !important;
+}
+.bg-clear{
+  background-color:transparent !important;
+}
+/* 字体大小 */
+.f-0{
+  font-size:0rpx;
+}
+.f-9{
+  font-size:18rpx;
+}
+.f-10{
+  font-size:20rpx;
+}
+.f-11{
+  font-size:22rpx;
+}
+.f-12{
+  font-size:24rpx;
+}
+.f-13{
+  font-size:26rpx;
+}
+.f-14{
+  font-size:28rpx;
+}
+.f-15{
+  font-size:30rpx;
+}
+.f-16{
+  font-size:32rpx;
+}
+.f-18{
+  font-size:36rpx;
+}
+.f-20{
+  font-size:40rpx;
+}
+.f-26{
+  font-size:54rpx;
+}
+.f-30{
+  font-size:60rpx;
+}
+/*公共样式*/
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+.inlineBlock{
+  display: inline-block;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.lf{
+  float: left;
+}
+.rt{
+  float: right;
+}
+.weight{
+  font-weight: bold;
+}
+.pointer{
+  cursor:pointer;
+}
+.overflowH{
+  overflow: hidden;
+}
+.left{
+  text-align: left !important;
+}
+.right{
+  text-align: right !important;
+}
+.center{
+  text-align: center !important;
+}
+.borderNone{
+  border:none !important;
+}
+.m-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-ellipsis-2{
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.tran3{
+  transition:all 0.3s ease !important;
+}
+/*清除浮动*/
+.clean::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-spacing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.blank{
+  height:20rpx;
+}

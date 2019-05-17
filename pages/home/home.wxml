@@ -1,0 +1,87 @@
+<view class="page">
+  <view class="clean set">
+    <text class="iconfont iconshezhi rt f-20"></text>
+  </view>
+  <view class="personal">
+    <image class="lf" src="../../assets/images/recommend/6-gou-3.jpg" mode="aspectFill"></image>
+    <view class="personal-text">
+      <view class="f-16">Norway</view>
+      <view class="f-12 c-99 m-ellipsis">暂无介绍暂无介绍暂无介绍暂无介绍暂无介绍暂无介绍暂无介绍暂无介绍暂无介绍</view>
+    </view>
+  </view>
+  <!-- 动态 -->
+  <view class="weui-cell dynamic">
+    <view class="weui-cell__bd weui-flex center">
+      <view class="weui-flex__item">
+        <text class="weight">8</text>
+        <view class="c-99 f-12">动态</view>
+      </view>
+      <view class="weui-flex__item">
+        <text class="weight">125</text>
+        <view class="c-99 f-12">关注</view>
+      </view>
+      <view class="weui-flex__item">
+        <text class="weight">20</text>
+        <view class="c-99 f-12">粉丝</view>
+      </view>
+    </view>
+    <view class="weui-cell__ft">
+      <view class="relative">
+        <text class="iconfont iconxiaoxi1 c-white f-20 bg-base"></text>
+        <view class="weui-badge f-9 bg-red">3</view>
+      </view>
+    </view>
+  </view>
+  <!-- 宠物 -->
+  <view class="pet">
+    <view class="weight pet-title">宠物</view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">
+        <image class="lf icon" src="../../assets/images/recommend/3-gou-3.jpg" mode="aspectFill"></image>
+        <view class="pet-text">
+          <view class="f-16">Norway</view>
+          <view class="f-12 c-99 m-ellipsis">柯基</view>
+        </view>
+      </view>
+      <view class="weui-flex__item">
+        <text class="iconfont iconiconset0186 c-cc lf"></text>
+        <view class="pet-text">
+          <view class="f-12 c-99 m-ellipsis">添加宠物</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="weui-cells home-list">
+    <view class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <text class="iconfont icongongwenbao1 f-26"></text>
+        </view>
+        <view class="weui-cell__bd f-14">我的活动</view>
+    </view>
+    <view class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconshoucang f-26"></text>
+        </view>
+        <view class="weui-cell__bd f-14">我的收藏</view>
+    </view>
+    <view class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <text class="iconfont iconyouhuiquan f-26"></text>
+        </view>
+        <view class="weui-cell__bd f-14">我的优惠券</view>
+    </view>
+    <view class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <text class="iconfont icondingdan f-26"></text>
+        </view>
+        <view class="weui-cell__bd f-14">我的订单</view>
+    </view>
+    <view class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <text class="iconfont icongouwuche f-26"></text>
+        </view>
+        <view class="weui-cell__bd f-14">购物车</view>
+    </view>
+  </view>
+</view>

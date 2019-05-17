@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/community/community",
+    "pages/discovery/discovery",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "犬友",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff8000",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/images/index.png",
+        "selectedIconPath": "assets/images/index_HL.png",
+        "text": "小窝"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "assets/images/community.png",
+        "selectedIconPath": "assets/images/community_HL.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "iconPath": "assets/images/discovery.png",
+        "selectedIconPath": "assets/images/discovery_HL.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "assets/images/home.png",
+        "selectedIconPath": "assets/images/home_HL.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

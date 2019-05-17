@@ -1,0 +1,135 @@
+.community-nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:100rpx;
+  z-index:10;
+}
+.community-nav>view{
+  width:120rpx;
+}
+.community-nav .item{
+  display:inline-block;
+  line-height:100rpx;
+  color:#999;
+}
+.community-nav .item.current{
+  color:#333;
+  font-size:36rpx;
+  font-weight:600;
+  line-height:90rpx;
+}
+/* 选项卡 */
+.tab-content{
+  margin-top:100rpx;
+  padding-bottom:20rpx;
+}
+.recommend-user{
+  padding:20rpx 60rpx;
+}
+.recommend-user::before{
+  border:none;
+}
+.recommend-user .weui-cell__hd image{
+  width:60rpx;
+  height:60rpx;
+  border-radius:50%;
+  margin-right:20rpx;
+}
+.recommend-user .weui-cell__ft{
+  padding:0 10rpx;
+  border-radius:10rpx;
+  color:#ff8000;
+  border:2rpx solid #ff8000;
+}
+.recommend-user .weui-cell__ft.already{
+  color:#999;
+  background:#eee;
+  border:2rpx solid #eee;
+}
+.recommend-content,
+.recommend-label{
+  padding:0 60rpx;
+}
+.recommend-img{
+  margin:20rpx 60rpx;
+  font-size:0;
+  border-radius:10rpx;
+  overflow:hidden;
+}
+.recommend-img.one image{
+  width:100%;
+}
+.recommend-img.two image{
+  width:50%;
+}
+.recommend-img.three image{
+  float:left;
+  width:50%;
+}
+.recommend-img.three image:first-child{
+  height:100%;
+}
+.recommend-img.three image:not(:first-child){
+  height:50%;
+}
+.recommend-img.more image{
+  width:50%;
+  height:50%;
+}
+.recommend-label view{
+  display:inline-block;
+  padding:0 6rpx;
+  border-radius:10rpx;
+  margin-right:10rpx;
+  background:#eee;
+}
+.recommend-fun{
+  padding:20rpx 40rpx 20rpx 60rpx;
+}
+.recommend-fun>view{
+  display:inline-block;
+  padding-right:40rpx;
+}
+.recommend-fun>view>text{
+  margin:-10rpx 4rpx 0 0;
+}
+.recommend-fun>view>view{
+  display:inline-block;
+}
+.recommend-fun>.transpond{
+  padding:0 20rpx;
+  margin-top:-10rpx;
+}
+.recommend-fun>.transpond text{
+  margin:0;
+}
+.video-box{
+  margin:120rpx 20rpx 0;
+}
+.video-item{
+  width:50%;
+}
+.video-item>view{
+  height:480rpx;
+  margin:10rpx;
+  border-radius:10rpx;
+  overflow:hidden;
+}
+.video-item>view>image{
+  width:100%;
+  height:100%;
+}
+.video-item>view>view{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  z-index:1;
+}
+.video-item>view>view text{
+  padding:0 20rpx;
+}
+.video-item>view>view .recommend-user{
+  padding:0 20rpx;
+}
